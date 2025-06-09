@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download ZIP Files</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 30px;
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-rb {
+      background-color: #28a745; /* Green */
+    }
+
+    .btn-rb:hover {
+      background-color: #218838;
+    }
+
+    .btn-cs {
+      background-color: #dc3545; /* Red */
+    }
+
+    .btn-cs:hover {
+      background-color: #c82333;
+    }
+
+    .download-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="rb.zip" download target="_blank" class="download-btn btn-rb">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path d="M13 10V3H7v7H4l6 6 6-6h-3zM4 18h12v-2H4v2z"/>
+    </svg>
+    Download RB
+  </a>
+
+  <a href="cs.zip" download target="_blank" class="download-btn btn-cs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+      <path d="M13 10V3H7v7H4l6 6 6-6h-3zM4 18h12v-2H4v2z"/>
+    </svg>
+    Download CS
+  </a>
+
+</body>
+</html>
